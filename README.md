@@ -28,7 +28,7 @@ flux bootstrap github \
 ````      
 # Encrypt token with below command
 ````
-  echo -n "<token>" | base64
+echo -n "<token>" | base64
 ````  
   
 ````update encrypted secret in secret file under notification-controller````
