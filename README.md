@@ -22,6 +22,7 @@
       --token $GITHUB_TOKEN
 # Encrypt token with below command
   echo -n "<token>" | base64
+  
 ````update encrypted secret in secret file under notification-controller````
 # Run Notification Controller in with flux 
   kubectl apply -f notification-controller/
