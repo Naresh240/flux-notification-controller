@@ -16,7 +16,7 @@ export GITHUB_TOKEN="provide github token"
 ````
 export GITHUB_USER="naresh240"
 export GITHUB_REPO="flux-notification-controller"
-export GITHUB_BRANCH="master
+export GITHUB_BRANCH="master"
 export GITHUB_DIR="./clusters"
   
 flux bootstrap github \
