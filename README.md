@@ -1,1 +1,1 @@
-# flux-notification-controller
+# notifications_to_git
