@@ -1,4 +1,4 @@
-# notifications_to_git
+# flux-notification-controller
 
 # Install Minikube Cluster
   [minikube_setup](https://github.com/Naresh240/kubernetes/blob/main/minikube-setup/README.md)
