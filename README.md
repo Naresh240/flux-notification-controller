@@ -14,17 +14,17 @@
 ````  
 # Flux Bootstraping
 ````
-  export GITHUB_USER="naresh240"
-  export GITHUB_REPO="flux-notification-controller"
-  export GITHUB_BRANCH="master"
-  export GITHUB_DIR="./clusters"
+export GITHUB_USER="naresh240"
+export GITHUB_REPO="flux-notification-controller"
+export GITHUB_BRANCH="master
+export GITHUB_DIR="./clusters"
   
-  flux bootstrap github \
-      --owner=$GITHUB_USER \
-      --repository=$GITHUB_REPO \  
-      --branch=$GITHUB_BRANCH \
-      --path=$GITHUB_DIR \
-      --token $GITHUB_TOKEN
+flux bootstrap github \
+    --owner=$GITHUB_USER \
+    --repository=$GITHUB_REPO \
+    --branch=$GITHUB_BRANCH \
+    --path=$GITHUB_DIR \
+    --token $GITHUB_TOKEN
 ````      
 # Encrypt token with below command
 ````
