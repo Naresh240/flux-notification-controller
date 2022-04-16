@@ -41,3 +41,19 @@ https://api.slack.com/apps?new_app=1
 ````
 https://app.slack.com/
 ````
+# Define Provider
+1. create a secret with your Slack incoming webhook:
+
+````
+kubectl -n flux-system create secret generic slack-url \
+--from-literal=address=https://hooks.slack.com/services/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
+````
+2. Create a notification provider for Slack by referencing the above secret:
+````
+kubectl apply -f slack-provider.yaml
+````
+3. Create Alert
+````
+kubectl apply -f slack-alert.yaml
+````
+# Check notifications in slack channel
