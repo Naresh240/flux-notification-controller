@@ -42,18 +42,15 @@ https://api.slack.com/apps?new_app=1
 https://app.slack.com/
 ````
 # Define Provider
-1. create a secret with your Slack incoming webhook:
-
+1. Run Notification Controller in with flux
 ````
-kubectl -n flux-system create secret generic slack-url \
---from-literal=address=https://hooks.slack.com/services/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
+kubectl apply -f slack/
 ````
-2. Create a notification provider for Slack by referencing the above secret:
+2. Run kustomization files for checks with pod-status-check
 ````
-kubectl apply -f slack-provider.yaml
+kubectl apply -f kustomization.yml
 ````
-3. Create Alert
+3. Tell Flux to pull the manifests from Git and upgrade itself with:
 ````
-kubectl apply -f slack-alert.yaml
+flux reconcile source git flux-system
 ````
-# Check notifications in slack channel
