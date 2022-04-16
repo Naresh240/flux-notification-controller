@@ -29,7 +29,7 @@ https://api.slack.com/apps?new_app=1
 
 ````Below we can see for creating a new Incoming webhook for workspace````
 
-![image](https://user-images.githubusercontent.com/58024415/163663325-9d6918fe-9836-45bd-ab60-873603dd6525.png)
+![image](https://user-images.githubusercontent.com/58024415/163663802-1b628813-5248-4146-ba9a-1cc4386aeb90.png)
 
 ````Click on Allow````
 
