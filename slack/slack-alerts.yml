@@ -1,0 +1,14 @@
+---	
+apiVersion: notification.toolkit.fluxcd.io/v1beta1
+kind: Alert
+metadata:
+  name: slack-alert
+  namespace: flux-system
+spec:
+  providerRef:
+    name: slack-provider
+  eventSeverity: info
+  eventSources:
+    - kind: Kustomization
+      name: podinfo
+      namespace: flux-system
